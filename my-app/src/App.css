@@ -39,8 +39,6 @@
 
 /* Work Section Styles */
 .topic {
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  color: var(--navy-color);
   display: flex;
   margin-bottom: var(--margin-bottom);
 }

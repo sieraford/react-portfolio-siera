@@ -1,48 +1,24 @@
 import React from "react";
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
 
 function Navigation() {
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-      <h1 className="navbar-brand">
-        Siera Ford
-      </h1>
-      <button
-        className="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarNavDropdown"
-        aria-controls="navbarNavDropdown"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span className="navbar-toggler-icon"></span>
-      </button>
-
-      <div className="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul className="navbar-nav">
-          <li className="nav-item active">
-            <a className="nav-link" href="/about-me">
-              About Me
-            </a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link" href="/portfolio">
-              Portfolio
-            </a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link" href="/contact">
-              Contact
-            </a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link" href="/resume">
-              Resume
-            </a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+    <Navbar bg="light" expand="lg">
+    <Container>
+      <Navbar.Brand href="#home">Siera Ford</Navbar.Brand>
+      <Navbar.Toggle aria-controls="basic-navbar-nav" />
+      <Navbar.Collapse id="basic-navbar-nav">
+        <Nav className="me-auto">
+          <Nav.Link href="/about-me">About Me</Nav.Link>
+          <Nav.Link href="/portfolio">Portfolio</Nav.Link>
+          <Nav.Link href="/contact">Contact</Nav.Link>
+          <Nav.Link href="/resume">Resume</Nav.Link>
+        </Nav>
+      </Navbar.Collapse>
+    </Container>
+  </Navbar>
   );
 };
 
