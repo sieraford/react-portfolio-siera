@@ -1,11 +1,18 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faGithub,faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import '@fortawesome/fontawesome-free/css/all.min.css';
+
 
 function Footer() {
   return (
-    <footer className="w-100 mt-auto text-dark p-4">
-      <div className="container text-center mb-5">
-        <h4>GitHub and LinkedIn profiles</h4>
-      </div>
+    <footer className="footer">
+      <a className="m-2" href="https://github.com/sieraford">
+        <FontAwesomeIcon icon={faGithub} />
+      </a>
+      <a className="m-2" href="https://www.linkedin.com/in/siera-ford">
+        <FontAwesomeIcon icon={faLinkedin} />
+      </a>
     </footer>
   );
 };

@@ -2,6 +2,10 @@
   text-align: center;
 }
 
+.main {
+  background-color: #B7D5D4;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -76,3 +80,11 @@
   left: var(--img-title-left);
   color: var(--white-color);
 }
+
+.footer {
+  width: 100%;
+  bottom: 0;
+  color: white;
+  font-size: 25px;
+  text-align: center;
+ }
