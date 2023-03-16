@@ -1,11 +1,11 @@
 import React from "react";
 
-function Navbar() {
+function Navigation() {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-      <a className="navbar-brand">
+      <h1 className="navbar-brand">
         Siera Ford
-      </a>
+      </h1>
       <button
         className="navbar-toggler"
         type="button"
@@ -46,4 +46,4 @@ function Navbar() {
   );
 };
 
-export default Navbar;
+export default Navigation;

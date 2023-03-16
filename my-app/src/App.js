@@ -1,6 +1,7 @@
 import './App.css';
 import "bootstrap/dist/css/bootstrap.min.css";
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import validator from 'validator';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import AboutMe from './pages/AboutMe';
 import Header from "./components/Header";
 import Contact from "./pages/Contact";
@@ -17,7 +18,7 @@ function App() {
               <Routes>
                 <Route 
                   path="/" 
-                  element={<AboutMe />} 
+                  element={<Navigate replace to="/about-me" />} 
                 />
                 <Route 
                   path="/about-me" 

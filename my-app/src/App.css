@@ -36,3 +36,45 @@
     transform: rotate(360deg);
   }
 }
+
+/* Work Section Styles */
+.topic {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: var(--navy-color);
+  display: flex;
+  margin-bottom: var(--margin-bottom);
+}
+
+.projects {
+  width: 100%;
+  height: 100%;
+}
+
+.secondary-projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-height: 50%
+}
+
+.secondary-projects section {
+  width: 49%;
+}
+.secondary-projects img {
+  height: 80%;
+  width: 100%;
+  margin-left: 10px;
+  opacity: var(--default-opacity);
+}
+
+.secondary-projects img:hover {
+  opacity: var(--hover-opacity);
+}
+
+
+.secondary-projects .title {
+  position: relative;
+  bottom: var(--img-title-bottom);
+  left: var(--img-title-left);
+  color: var(--white-color);
+}
