@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useState } from 'react';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import { LinkContainer } from 'react-router-bootstrap';
 
 function Navigation() {
+
   return (
     <Navbar bg="light" expand="lg">
     <Container>
@@ -11,10 +13,18 @@ function Navigation() {
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="me-auto">
-          <Nav.Link href="/about-me">About Me</Nav.Link>
-          <Nav.Link href="/portfolio">Portfolio</Nav.Link>
-          <Nav.Link href="/contact">Contact</Nav.Link>
-          <Nav.Link href="/resume">Resume</Nav.Link>
+          <LinkContainer to="/about-me">
+            <Nav.Link>About Me</Nav.Link>
+          </LinkContainer>
+          <LinkContainer to="/portfolio">
+            <Nav.Link>Portfolio</Nav.Link>
+          </LinkContainer>
+          <LinkContainer to="/contact">
+            <Nav.Link>Contact</Nav.Link>
+          </LinkContainer>
+          <LinkContainer to="/resume">
+            <Nav.Link>Resume</Nav.Link>
+          </LinkContainer>
         </Nav>
       </Navbar.Collapse>
     </Container>
