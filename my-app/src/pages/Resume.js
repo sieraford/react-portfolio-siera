@@ -1,23 +1,29 @@
-import React, { useState } from 'react';
+import React from 'react';
+import ResumePDF from '../resume-placeholder.pdf'
 
 function Resume() {
-  const [input, setInput] = useState('');
 
   return (
     <div>
       <h1>Resume</h1>
-      <a href='/somefile.txt' download>Click to download</a>
+      <a href={ResumePDF} download>Download my resume</a>
+      <h2 className='mt-2'>Front-end Proficiencies</h2>
       <ul>
         <li>JavaScript</li>
         <li>HTML</li>
         <li>CSS</li>
         <li>jQuery</li>
         <li>Bootstrap</li>
-        <li>Node.js</li>
-        <li>MySQL</li>
-        <li>MongoDB</li>
-        <li>Express.js</li>
-        <li>React.js</li>
+        <li>React</li>
+        </ul>
+        <h2>Back-end Proficiencies</h2>
+        <ul>
+          <li>APIs</li>
+          <li>Node</li>
+          <li>MySQL</li>
+          <li>MongoDB</li>
+          <li>Express</li>
+          <li>GraphQL</li>
         </ul>
     </div>
   );
