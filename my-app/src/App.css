@@ -92,3 +92,7 @@
  .active {
   font-weight: bold;
 }
+
+.headshot {
+  width: 75px;
+}

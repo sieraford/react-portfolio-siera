@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
 
 function Resume() {
+  const [input, setInput] = useState('');
 
   return (
     <div>
       <h1>Resume</h1>
+      <a href='/somefile.txt' download>Click to download</a>
       <ul>
         <li>JavaScript</li>
         <li>HTML</li>

@@ -1,31 +1,101 @@
-import React, { useState } from 'react';
-import Form from 'react-bootstrap/Form';
-import Button from 'react-bootstrap/Button';
+import React from 'react';
 
-function Contact() {
+export default class ContactMe extends React.Component {
+  constructor(props) {
+    super(props);
 
-  return (
-  <div>
-    <h1>Contact</h1>
-    <Form>
-      <Form.Group className="mb-3" controlId="formName">
-        <Form.Label>Name</Form.Label>
-        <Form.Control type="text" />
-      </Form.Group>
-      <Form.Group className="mb-3" controlId="formEmail">
-        <Form.Label>Email address</Form.Label>
-        <Form.Control type="email" />
-      </Form.Group>
-      <Form.Group className="mb-3" controlId="formMessage">
-        <Form.Label>Message</Form.Label>
-        <Form.Control as="textarea" rows={3} />
-      </Form.Group>
-      <Button variant="primary" type="submit">
-        Submit
-      </Button>
-    </Form>
-  </div>
-  );
+    this.state = {
+      name: "",
+      email: "",
+      message: "",
+      alertName: "",
+      alertEmail: "",
+      alertMessage: "",
+    }
+  }
+
+  handleOnBlurName(event) {
+    var name        = event.target.value;
+    var alertName = "";
+
+    if(!name) {
+      alertName = "Required field"; 
+    }
+
+    this.setState({
+      name: name,
+      alertName: alertName
+    });
+  }
+
+  handleOnBlurEmail(event) {
+    var email        = event.target.value;
+    var alertEmail = "";
+    const re = /\S+@\S+\.\S+/;
+
+    if(!email) {
+      alertEmail = "Required field"; 
+    } else {
+      const validEmail = re.test(email)
+      if(!validEmail) {
+        alertEmail = "Invalid email"; 
+      }
+    }
+
+    this.setState({
+      email: email,
+      alertEmail: alertEmail
+    });
+  }
+
+  handleOnBlurMessage(event) {
+    var message        = event.target.value;
+    var alertMessage = "";
+
+    if(!message) {
+      alertMessage = "Required field"; 
+    }
+
+    this.setState({
+      message: message,
+      alertMessage: alertMessage
+    });
+  }
+
+  render() {
+    return (
+      <div>
+        <h1>Contact</h1>
+        <div className="form-group">
+          <label for="nameField">
+            Name:
+          </label>
+          <input
+            type="text"
+            onBlur={this.handleOnBlurName.bind(this)}
+            className="form-control" 
+            id="nameField" 
+          />
+          {this.state.alertName}
+          <br/>
+          <label for="nameField">
+            Email:
+          </label>
+          <input
+            type="email"
+            onBlur={this.handleOnBlurEmail.bind(this)}
+            className="form-control" 
+            id="emailField" 
+          />
+          {this.state.alertEmail}
+          <br/>
+          <label for="messageField">Message</label>
+          <textarea className="form-control" id="messageField" rows="3" onBlur={this.handleOnBlurMessage.bind(this)}></textarea>
+          {this.state.alertMessage}
+          <br/>
+          <button type="submit" class="btn btn-primary mt-4">Submit</button>
+        </div>
+      </div>
+    );
+  }
 }
-
-export default Contact;
