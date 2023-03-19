@@ -4,6 +4,8 @@
 
 .main {
   background-color: #B7D5D4;
+  min-height: 100vh;
+  min-width: 100vw;
 }
 
 .App-logo {
@@ -82,17 +84,47 @@
 }
 
 .footer {
+  position:fixed;
   width: 100%;
   bottom: 0;
   color: white;
   font-size: 25px;
   text-align: center;
+  background-color: #364958;
+ }
+
+ .header {
+  /* background-color: #ceb5a7; */
+  background-image: linear-gradient(to right, #ceb5a7, white);
  }
 
  .active {
   font-weight: bold;
 }
 
+h1 {
+  color: #364958;
+}
+
 .headshot {
-  width: 75px;
+  width: 100px;
+}
+
+.content {
+  margin: 30px;
+}
+
+.container {
+  min-width: 95%;
+}
+
+ .sub-content {
+  max-width: 80%;
+  background-color: #E6F0F0;
+  padding: 20px;
+  margin: 20px;
+}
+
+.aboutPage p {
+    line-height: 2;
 }

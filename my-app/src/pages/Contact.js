@@ -64,9 +64,9 @@ export default class ContactMe extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className='contactPage'>
         <h1>Contact</h1>
-        <div className="form-group">
+        <div className="form-group sub-content">
           <label for="nameField">
             Name:
           </label>
@@ -78,7 +78,7 @@ export default class ContactMe extends React.Component {
           />
           {this.state.alertName}
           <br/>
-          <label for="nameField">
+          <label for="emailField">
             Email:
           </label>
           <input

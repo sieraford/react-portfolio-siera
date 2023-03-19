@@ -7,7 +7,7 @@ import { LinkContainer } from 'react-router-bootstrap';
 function Navigation() {
 
   return (
-    <Navbar bg="light" expand="lg">
+    <Navbar expand="lg">
     <Container>
       <Navbar.Brand>Siera Ford</Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
