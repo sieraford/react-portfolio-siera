@@ -6,7 +6,7 @@ function Portfolio() {
   return (
     <div className="topic flex-column">
       <h1>Portfolio</h1>
-      <div className="projects sub-content">
+      <div className="projects sub-content container">
         <Project />
     </div>
   </div>
