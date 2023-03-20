@@ -89,7 +89,7 @@ export default class ContactMe extends React.Component {
           />
           {this.state.alertEmail}
           <br/>
-          <label for="messageField">Message</label>
+          <label for="messageField">Message:</label>
           <textarea className="form-control" id="messageField" rows="3" onBlur={this.handleOnBlurMessage.bind(this)}></textarea>
           {this.state.alertMessage}
           <br/>
