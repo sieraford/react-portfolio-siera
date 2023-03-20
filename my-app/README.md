@@ -4,7 +4,7 @@
 
 A single-page application built with React that showcases examples of my work.
 
-Click [here](https://note-taker-app-siera.herokuapp.com/) to view the deployed application.
+Click [here](https://sieraford.github.io/react-portfolio-siera/) to view the deployed application.
 
 ## Demo
 
