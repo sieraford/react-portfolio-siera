@@ -8,7 +8,7 @@ Click [here](https://sieraford.github.io/react-portfolio-siera/) to view the dep
 
 ## Demo
 
-![GIF](./src/React%20App.gif)
+![GIF](./React%20App.gif)
 
 ## Installation
 
@@ -40,7 +40,7 @@ THEN I receive a notification if I have entered an invalid email address
 WHEN I am presented with the Resume section  
 THEN I see a link to a downloadable resume and a list of the developer’s proficiencies  
 WHEN I view the footer  
-THEN I am presented with text or icon links to the developer’s GitHub and LinkedIn profiles, and Twitter
+THEN I am presented with text or icon links to the developer’s GitHub, LinkedIn and Twitter profiles
 
 ## License
 
