@@ -8,7 +8,7 @@ Click [here](https://note-taker-app-siera.herokuapp.com/) to view the deployed a
 
 ## Demo
 
-![GIF](./public/assets/images/note-taker-demo.gif)
+![GIF](./src/React%20App.gif)
 
 ## Installation
 

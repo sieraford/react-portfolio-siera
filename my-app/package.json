@@ -1,7 +1,7 @@
 {
   "name": "my-app",
   "version": "0.1.0",
-  "homepage": "https://sieraford.github.io/",
+  "homepage": "https://sieraford.github.io/react-portfolio-siera",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.3.0",

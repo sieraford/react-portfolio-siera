@@ -18,6 +18,10 @@ function App() {
                   path="/" 
                   element={<Navigate replace to="/about-me" />} 
                 />
+                  <Route 
+                  path="/react-portfolio-siera" 
+                  element={<Navigate replace to="/about-me" />} 
+                />
                 <Route 
                   path="/about-me" 
                   element={<AboutMe />} 
