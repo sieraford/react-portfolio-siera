@@ -3,7 +3,7 @@ import MoodMixerImage from '../mood-mixer.png'
 import PantryPalImage from '../pantry-pal.png'
 import NoteTakerImage from '../note-taker.png'
 import WeatherDashboardImage from '../weather-dashboard.png'
-import CodingQuizImage from '../coding-quiz.png'
+import JavaJunkiesImage from '../java-junkies.png'
 import WorkDaySchedulerImage from '../work-day-scheduler.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub} from '@fortawesome/free-brands-svg-icons'
@@ -11,6 +11,13 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 
 function Project() {
     const projects = [
+        {
+            url: "https://java-junkies-virtual-cafe.herokuapp.com/",
+            image: JavaJunkiesImage,
+            title: "Java Junkies",
+            tech: "MERN Stack",
+            github: "https://github.com/Klgibsonjr/java-junkies-virtual-cafe"
+        },
         {
             url: "https://the-pantry-pal.herokuapp.com/",
             image: PantryPalImage,
@@ -45,13 +52,6 @@ function Project() {
             title: "Work Day Scheduler",
             tech: "HTML/CSS/Javascript/jQuery",
             github: "https://github.com/sieraford/work-day-scheduler-siera"
-        },
-        {
-            url: "https://github.com/sieraford/web-apis-code-quiz-siera",
-            image: CodingQuizImage,
-            title: "Coding Quiz",
-            tech: "HTML/CSS/Javascript",
-            github: "https://github.com/sieraford/web-apis-code-quiz-siera"
         },
     ]
 
