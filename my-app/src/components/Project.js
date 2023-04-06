@@ -9,6 +9,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub} from '@fortawesome/free-brands-svg-icons'
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
+//projects to be rendered on portfolio 
 function Project() {
     const projects = [
         {
