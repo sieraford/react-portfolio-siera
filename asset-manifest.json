@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/react-portfolio-siera/static/css/main.b0366e3b.css",
-    "main.js": "/react-portfolio-siera/static/js/main.b6477a80.js",
+    "main.js": "/react-portfolio-siera/static/js/main.3e7bddf6.js",
     "static/media/weather-dashboard.png": "/react-portfolio-siera/static/media/weather-dashboard.9ba54e3b92efd281d203.png",
     "static/media/work-day-scheduler.png": "/react-portfolio-siera/static/media/work-day-scheduler.8cefa0d7daaa3d580815.png",
-    "static/media/coding-quiz.png": "/react-portfolio-siera/static/media/coding-quiz.3192f8b8cc2d7fd0bf62.png",
     "static/media/pantry-pal.png": "/react-portfolio-siera/static/media/pantry-pal.f1ab06d7db63bfc3a662.png",
     "static/media/mood-mixer.png": "/react-portfolio-siera/static/media/mood-mixer.db3e17e134a77d941904.png",
     "static/media/note-taker.png": "/react-portfolio-siera/static/media/note-taker.b9f5dd0e22711aa52187.png",
+    "static/media/java-junkies.png": "/react-portfolio-siera/static/media/java-junkies.66ea600560abb0973715.png",
     "static/media/headshot.png": "/react-portfolio-siera/static/media/headshot.b2127f0cd613e5e1a66d.png",
     "static/media/fa-solid-900.ttf": "/react-portfolio-siera/static/media/fa-solid-900.2877d54f94f30c5d563c.ttf",
     "static/media/fa-brands-400.ttf": "/react-portfolio-siera/static/media/fa-brands-400.13e40630e5866f777de8.ttf",
@@ -20,10 +20,10 @@
     "static/media/fa-v4compatibility.woff2": "/react-portfolio-siera/static/media/fa-v4compatibility.497d535001197a9c5b38.woff2",
     "index.html": "/react-portfolio-siera/index.html",
     "main.b0366e3b.css.map": "/react-portfolio-siera/static/css/main.b0366e3b.css.map",
-    "main.b6477a80.js.map": "/react-portfolio-siera/static/js/main.b6477a80.js.map"
+    "main.3e7bddf6.js.map": "/react-portfolio-siera/static/js/main.3e7bddf6.js.map"
   },
   "entrypoints": [
     "static/css/main.b0366e3b.css",
-    "static/js/main.b6477a80.js"
+    "static/js/main.3e7bddf6.js"
   ]
 }
